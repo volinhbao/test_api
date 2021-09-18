@@ -12,5 +12,7 @@ func main() {
 	
 	router := gin.Default()
 
+	routes.Routes(router)
 
+	log.Fatal(router.Run(":8080"))
 }
